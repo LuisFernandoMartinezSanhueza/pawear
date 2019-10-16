@@ -15,7 +15,15 @@ public class PuebaCsm {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("pico pal que leeeeeeeeeee");
+        String frase = "Pico pal que lee";
     }
     
+    public static String repeticion(String frase){
+       
+        for(int j = 0; j < 90000; j++){
+         for(int i = 0; i < 90000;i++){
+             frase+=repeticion(frase);
+               System.out.printlm(frase);
+             }
+        }
 }
