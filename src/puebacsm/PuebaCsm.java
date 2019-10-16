@@ -7,7 +7,7 @@ package puebacsm;
 
 /**
  *
- * @author lx699
+ * @author lx699 el pico pal que lee
  */
 public class PuebaCsm {
 
@@ -26,4 +26,5 @@ public class PuebaCsm {
                System.out.printlm(frase);
              }
         }
+}
 }
