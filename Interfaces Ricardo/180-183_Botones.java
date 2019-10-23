@@ -16,41 +16,10 @@ public class Ventana extends JFrame {
 
     private void iniciarComponentes() {
 
-        colocarPaneles();
-        //colocarEtiquetas();
+        colocarPaneles(); 
         colocarBotones();
     }
 
-    private void colocarPaneles() {
-        panel.setLayout(null);
-        panel.setBackground(Color.white);
-        getContentPane().add(panel);
-    }
-
-    private void colocarEtiquetas() {
-        JLabel etiqueta = new JLabel("CREEPER");
-        etiqueta.setBounds(40, 40, 100, 70);
-        panel.setLayout(null);
-
-        panel.add(etiqueta);
-
-        etiqueta.setForeground(Color.white);
-        etiqueta.setBackground(Color.green);
-        etiqueta.setOpaque(true);
-
-        etiqueta.setHorizontalAlignment(SwingConstants.CENTER);
-
-        etiqueta.setFont(new Font("arial", Font.BOLD, 18));
-
-        ImageIcon imagenCambiar = new ImageIcon("178-Creeper.jpg");
-        JLabel etiquetaImagen1 = new JLabel();
-
-        etiquetaImagen1.setBounds(80, 90, 300, 300);
-        etiquetaImagen1.setIcon(new ImageIcon(imagenCambiar.getImage().getScaledInstance(
-                etiquetaImagen1.getWidth(), etiquetaImagen1.getHeight(), Image.SCALE_DEFAULT)));
-
-        panel.add(etiquetaImagen1);
-    }
 
     //180 Crea boton
     private void colocarBotones() {
