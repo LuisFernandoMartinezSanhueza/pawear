@@ -21,7 +21,7 @@ public class Ventana extends JFrame {
     }
 
 
-    //180 Crea boton
+ //180 Crea boton
     private void colocarBotones() {
         JButton boton1 = new JButton("Click");//constructor1 o 
                                     //BOTON 2 TEXTO
@@ -58,5 +58,52 @@ public class Ventana extends JFrame {
         boton4.setBorder(BorderFactory.createLineBorder(Color.yellow, 2, true));//Border es una interface, el entero es el numero de pixeles
         
     }
+    
+      private void colocarRadioBotones() {
+
+ //184-Crear RadioBotones
+        JRadioButton radioBoton1 = new JRadioButton("Opcion 1", true);//Contructor x
+        radioBoton1.setBounds(50, 100, 100, 50);
+        radioBoton1.setEnabled(false);//permite la seleccion del boton
+        radioBoton1.setText("Proga");
+        radioBoton1.setFont(new Font("Proga", Font.BOLD, 20)); // editar el texto dentro de los botones
+        panel.add(radioBoton1);
+
+        JRadioButton radioBoton2 = new JRadioButton("Opcion 2", false);
+        radioBoton2.setBounds(50, 150, 100, 50);
+        panel.add(radioBoton2);
+
+        JRadioButton radioBoton3 = new JRadioButton("Opcion 3", false);
+        radioBoton3.setBounds(50, 200, 100, 50);
+        panel.add(radioBoton3);
+
+        ButtonGroup grupoRadioBotones = new ButtonGroup();//crear un grupo de radiobotones para que solo marque solo una opcion
+        grupoRadioBotones.add(radioBoton1);
+        grupoRadioBotones.add(radioBoton2);
+        grupoRadioBotones.add(radioBoton3);
+
+    }
+
+    private void colocarBotonesActivacion() {
+
+  //185 Botones de activacion
+        JToggleButton botonActivacion1 = new JToggleButton("Opcion 1", true);//se activan con true
+        botonActivacion1.setBounds(50, 100, 100, 50);
+        panel.add(botonActivacion1);
+
+        JToggleButton botonActivacion2 = new JToggleButton("Opcion 1", false);//se activan con true
+        botonActivacion2.setBounds(50, 200, 100, 50);
+        panel.add(botonActivacion2);
+
+        JToggleButton botonActivacion3 = new JToggleButton("Opcion 1", false);//se activan con true
+        botonActivacion3.setBounds(50, 300, 100, 50);
+        panel.add(botonActivacion3);
+
+        ButtonGroup grupoBotonesActivado = new ButtonGroup();
+        grupoBotonesActivado.add(botonActivacion1);
+        grupoBotonesActivado.add(botonActivacion2);
+        grupoBotonesActivado.add(botonActivacion3);
+    }
+    
 
 }
